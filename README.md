@@ -59,10 +59,3 @@ Replace the local model paths in the code file with the downloaded model paths.
 ## Acknowledgments
 
 This fork builds upon the original work and extends its capabilities to enhance research in adversarial suffix optimization. Special thanks to the original authors for their foundational work. The additional contributions in this fork are aimed at providing greater flexibility, improved performance, and more comprehensive testing frameworks.
-
-```
-
-### Summary of Changes:
-1. **Fork Notice:** Clearly indicated that this is a fork of the original implementation.
-2. **Contributions Section:** Emphasized that these are your contributions to the original work, adding advanced features and more flexibility.
-3. **Acknowledgments Section:** Acknowledged the original authors and specified that your enhancements build upon their foundational work.
