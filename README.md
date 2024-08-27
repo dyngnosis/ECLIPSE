@@ -51,7 +51,7 @@ You can download pre-trained models here:
 
 - [llama2-7b-chat](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf#/)
 - [llama3-8b-instruct](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct#)
-- [lexi] (https://huggingface.co/Orenguteng/Llama-3.1-8B-Lexi-Uncensored)
+- [lexi](https://huggingface.co/Orenguteng/Llama-3.1-8B-Lexi-Uncensored)
 - [vicuna-7b](https://huggingface.co/lmsys/vicuna-7b-v1.5#/)
 - [falcon-7b-instruct](https://huggingface.co/tiiuae/falcon-7b-instruct#/)
 - [Harmfulness Scorer](https://huggingface.co/hubert233/GPTFuzz#/)
