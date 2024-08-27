@@ -1,38 +1,68 @@
-# ECLIPSE
+# ECLIPSE (Fork)
 
-This repository is the official implementation of paper ``Unlocking Adversarial Suffix Optimization Without Affirmative Phrases: Efficient Black-box Jailbreaking via LLM as Optimizer''
+This repository is a fork of the original implementation of the paper "Unlocking Adversarial Suffix Optimization Without Affirmative Phrases: Efficient Black-box Jailbreaking via LLM as Optimizer."
+
+## Contributions
+
+This fork includes several enhancements and additional features to the original implementation:
+
+- Support for more models, including 'lexi' and 'llama3-8b-instruct'.
+- Advanced functionality for testing prompts using specific CUDA devices for attackers, targets, and judges.
+- Enhanced logging capabilities to monitor different aspects of model behavior and the optimization process.
+- A framework to load and process specific JSON files containing prompts for evaluation against the models.
+- Integration of a custom scoring mechanism to evaluate the effectiveness of generated prompts.
+
+These additions are aimed at providing more flexibility and control over the adversarial suffix optimization process, allowing for more extensive experimentation and analysis.
 
 ## Requirements
 
-To install requirements:
+To install the required packages:
 
-```setup
+```bash
 pip install -r requirements.txt
 ```
 
 ## Running Code
 
-To running our code, run this command:
+To run the main code, use this command:
 
-```
+```bash
 python Eclipse.py --model llama2-7b-chat --dataset 1 --cuda 0 --batchsize 8 --K_round 50 --ref_history 10
 ```
 
->📋  We provide three open-source LLMs ['llama2-7b-chat', 'vicuna-7b', 'falcon-7b-instruct'] here, and the dataset 1 is what we used for comparison with GCG and dataset 2 is what we used for template-based methods. If you want to specify a specific LLM as the attacker, you can add the --attacker parameter.
+> 📋 We provide three open-source LLMs ['llama2-7b-chat', 'vicuna-7b', 'falcon-7b-instruct'] here. Dataset 1 is used for comparison with GCG, and Dataset 2 is used for template-based methods. If you want to specify a particular LLM as the attacker, you can add the `--attacker` parameter.
 
-To attack the gpt-3.5-Turbo, run this command:
-```
+To attack the GPT-3.5-Turbo, run this command:
+
+```bash
 python Eclipse-gpt.py --model gpt3.5 --dataset 1 --cuda 0 --batchsize 8 --K_round 50 --ref_history 10
 ```
 
+## Additional Features
+
+- **Custom Model Support:** Added new models, including 'lexi' and 'llama3-8b-instruct'.
+- **Multiple CUDA Devices:** Allows specifying different CUDA devices for attacker, target, and judge models with parameters such as `--attacker_cuda`, `--target_cuda`, and `--judge_cuda`.
+- **JSON Prompt Evaluation:** Load and process specific JSON files containing prompts to check their effectiveness against the models.
+- **Detailed Logging:** Enhanced logging functionality for better tracking and debugging of model behaviors during optimization rounds.
+
 ## Pre-trained Models
 
-You can download pretrained models here:
+You can download pre-trained models here:
+
 - [llama2-7b-chat](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf#/)
-- [vicuna-7b](https://huggingface.co/lmsys/vicuna-7b-v1.5#/) 
+- [vicuna-7b](https://huggingface.co/lmsys/vicuna-7b-v1.5#/)
 - [falcon-7b-instruct](https://huggingface.co/tiiuae/falcon-7b-instruct#/)
-- [Harmfulness Scorer](https://huggingface.co/hubert233/GPTFuzz#/).
+- [Harmfulness Scorer](https://huggingface.co/hubert233/GPTFuzz#/)
 
-And please replace your local model path in the code file.
+Replace the local model paths in the code file with the downloaded model paths.
 
+## Acknowledgments
 
+This fork builds upon the original work and extends its capabilities to enhance research in adversarial suffix optimization. Special thanks to the original authors for their foundational work. The additional contributions in this fork are aimed at providing greater flexibility, improved performance, and more comprehensive testing frameworks.
+
+```
+
+### Summary of Changes:
+1. **Fork Notice:** Clearly indicated that this is a fork of the original implementation.
+2. **Contributions Section:** Emphasized that these are your contributions to the original work, adding advanced features and more flexibility.
+3. **Acknowledgments Section:** Acknowledged the original authors and specified that your enhancements build upon their foundational work.
