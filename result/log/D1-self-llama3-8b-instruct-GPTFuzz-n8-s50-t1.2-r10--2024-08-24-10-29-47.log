@@ -1,0 +1,17 @@
+2024-08-24 10:29:47,074 - INFO - The random seed has been set as 8173.
+2024-08-24 10:29:47,074 - INFO - config : model: llama3-8b-instruct
+2024-08-24 10:29:47,074 - INFO - config : attacker: None
+2024-08-24 10:29:47,074 - INFO - config : cuda: 0
+2024-08-24 10:29:47,074 - INFO - config : randomseed: 42
+2024-08-24 10:29:47,074 - INFO - config : scorer: GPTFuzz
+2024-08-24 10:29:47,074 - INFO - config : batchsize: 8
+2024-08-24 10:29:47,074 - INFO - config : K_round: 50
+2024-08-24 10:29:47,074 - INFO - config : temperature: 1.2
+2024-08-24 10:29:47,074 - INFO - config : max_response: 256
+2024-08-24 10:29:47,074 - INFO - config : ref_history: 10
+2024-08-24 10:29:47,074 - INFO - config : history: True
+2024-08-24 10:29:47,074 - INFO - config : dataset: 1
+2024-08-24 10:29:47,074 - INFO - config : attacker_cuda: 0
+2024-08-24 10:29:47,074 - INFO - config : target_cuda: 1
+2024-08-24 10:29:47,074 - INFO - config : judge_cuda: 2
+2024-08-24 10:29:47,074 - INFO - config : check_prompts: result/generated_prompts/D1-lexi-llama2-7b-chat-GPTFuzz-n8-s50-t1.2-r10--2024-08-22-23-38-40.json
